@@ -8,9 +8,11 @@
   <body>
     <header>
       <div>
-        <a href="#" aria-label="Tidningsnamn startsida"
-          ><strong>Nyheter.NU</strong></a
-        >
+        <h1>
+          <a href="#" aria-label="Tidningsnamn startsida">Nyheter.NU</a>
+        </h1>
+
+        <!-- Huvudnavigation -->
         <nav aria-label="Huvudnavigation">
           <ul>
             <li><a href="#" aria-current="page">Hem</a></li>
@@ -19,18 +21,21 @@
             <li><a href="#">Sport</a></li>
           </ul>
         </nav>
+
+        <!-- Sökfält -->
         <form role="search" aria-label="Sök">
-          <label for="q">Sök</label>
-          <input id="q" name="q" type="search" placeholder="Sök artiklar…" />
+          <label>Sök</label>
+          <input name="q" type="search" placeholder="Sök artiklar…" />
           <button type="submit">Sök</button>
         </form>
+
+        <!-- Kategorinavigation -->
         <nav aria-label="Kategorier">
           <ul>
             <li><a href="#">Inrikes</a></li>
             <li><a href="#">Utrikes</a></li>
             <li><a href="#">Världen</a></li>
             <li><a href="#">Politik</a></li>
-            
           </ul>
         </nav>
       </div>
@@ -38,16 +43,8 @@
 
     <main>
       <section aria-label="Huvudartikel">
-        
-        
         <h1>Krock på E4an</h1>
-        <p>
-          Krock på E4an båda vägar avstängda
-        </p>
-       
-          
-          
-        </p>
+        <p>Krock på E4an båda vägar avstängda</p>
       </section>
 
       <div>
@@ -55,29 +52,31 @@
           <article>
             <header>
               <h2>Alexander Isak klar för Liverpool</h2>
-              <p>Stor shock för fotbollsvärlden! Alexander Isak klar för Liverpool efter mycket om och men runt Newcastle. </p>
+              <p>
+                Stor shock för fotbollsvärlden! Alexander Isak klar för
+                Liverpool efter mycket om och men runt Newcastle.
+              </p>
             </header>
             <figure>
-              <img src="" alt="Platshållare för bild" />
+              <img src="" alt="Platshållarbild på Alexander Isak" />
             </figure>
-            <p>
-              Här ser vi Alexander Isak med sin nya Liverpool tröja, som visar på att han är klar för Liverpool
-            </p>
+            <p>Här ser vi Alexander Isak med sin nya Liverpool-tröja.</p>
             <p><a href="#">Läs mer</a></p>
           </article>
 
           <article>
             <header>
-              <h2>Trump's tariffer mot Kina </h2>
-              <p>Trump har ännu en gång höjt tarifferna mot Kina, nu mer än förr till 200%</p>
+              <h2>Trump's tariffer mot Kina</h2>
+              <p>
+                Trump har ännu en gång höjt tarifferna mot Kina, nu mer än förr
+                till 200%.
+              </p>
             </header>
             <figure>
-              
+              <img src="" alt="Platshållarbild" />
             </figure>
-           
             <p><a href="#">Läs mer</a></p>
           </article>
-            
         </section>
 
         <aside aria-label="Tipsa redaktionen">
@@ -85,26 +84,20 @@
             <h3>Tipsa redaktionen</h3>
             <form action="#" method="post">
               <div>
-                <label for="namn">Ditt namn</label>
-                <input id="namn" name="namn" autocomplete="name" />
+                <label>Ditt namn</label>
+                <input name="namn" autocomplete="name" />
               </div>
               <div>
-                <label for="tel">Din telefon</label>
-                <input id="tel" name="tel" type="tel" autocomplete="tel" />
+                <label>Din telefon</label>
+                <input name="tel" type="tel" autocomplete="tel" />
               </div>
               <div>
-                <label for="mail">Din e‑post</label>
-                <input
-                  id="mail"
-                  name="mail"
-                  type="email"
-                  autocomplete="email"
-                  required
-                />
+                <label>Din e-post</label>
+                <input name="mail" type="email" autocomplete="email" required />
               </div>
               <div>
-                <label for="amne">Välj ämne</label>
-                <select id="amne" name="amne">
+                <label>Välj ämne</label>
+                <select name="amne">
                   <option>Nyhetstips</option>
                   <option>Rättelse</option>
                   <option>Debatt</option>
@@ -112,18 +105,16 @@
                 </select>
               </div>
               <div>
-                <label for="msg">Meddelande</label>
+                <label>Meddelande</label>
                 <textarea
-                  id="msg"
                   name="msg"
                   rows="6"
                   placeholder="Berätta vad som hänt…"
                 ></textarea>
               </div>
-            
               <div>
-                
-                <select id="gdpr" name="gdpr">
+                <label>GDPR och villkor</label>
+                <select name="gdpr">
                   <option selected>Välj ett alternativ</option>
                   <option>Jag godkänner villkoren</option>
                 </select>
@@ -131,7 +122,6 @@
               <div>
                 <button type="submit">Skicka</button>
               </div>
-              
             </form>
           </section>
 
@@ -139,8 +129,8 @@
             <h3>Nyhetsbrev</h3>
             <p>Få helgens viktigaste direkt i inkorgen.</p>
             <form action="#" method="post">
-              <label for="brev">E‑post</label>
-              <input id="brev" type="email" placeholder="din@mail.se" />
+              <label>E-post</label>
+              <input type="email" placeholder="din@mail.se" />
               <button type="submit">Prenumerera</button>
             </form>
           </section>
@@ -152,10 +142,9 @@
       <section>
         <h4>Nyheter.nu</h4>
         <p>Örebro</p>
-        <p>Telefon: </p>
-        <p>E‑post:</p>
+        <p>Telefon:</p>
+        <p>E-post:</p>
       </section>
-      <section>
-      
-   
+    </footer>
+  </body>
 </html>
