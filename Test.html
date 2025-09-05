@@ -9,33 +9,60 @@
     <header>
       <div>
         <h1>
-          <a href="#" aria-label="Tidningsnamn startsida">Nyheter.NU</a>
+          <a href="/" aria-label="Tidningsnamn startsida">Nyheter.NU</a>
         </h1>
 
-        <!-- Huvudnavigation -->
         <nav aria-label="Huvudnavigation">
           <ul>
-            <li><a href="#" aria-current="page">Hem</a></li>
-            <li><a href="#">Senaste nytt</a></li>
-            <li><a href="#">Blåljus</a></li>
-            <li><a href="#">Sport</a></li>
+            <li><a href="/" aria-current="page">Hem</a></li>
+            <li>
+              <a href="/senaste.html" target="_blank" rel="noopener noreferrer"
+                >Senaste nytt</a
+              >
+            </li>
+            <li>
+              <a href="/blaljus.html" target="_blank" rel="noopener noreferrer"
+                >Blåljus</a
+              >
+            </li>
+            <li>
+              <a href="/sport.html" target="_blank" rel="noopener noreferrer"
+                >Sport</a
+              >
+            </li>
           </ul>
         </nav>
 
-        <!-- Sökfält -->
         <form role="search" aria-label="Sök">
-          <label>Sök</label>
-          <input name="q" type="search" placeholder="Sök artiklar…" />
+          <label>
+            Sök
+            <input name="q" type="search" placeholder="Sök artiklar…" />
+          </label>
           <button type="submit">Sök</button>
         </form>
 
-        <!-- Kategorinavigation -->
         <nav aria-label="Kategorier">
           <ul>
-            <li><a href="#">Inrikes</a></li>
-            <li><a href="#">Utrikes</a></li>
-            <li><a href="#">Världen</a></li>
-            <li><a href="#">Politik</a></li>
+            <li>
+              <a href="/inrikes.html" target="_blank" rel="noopener noreferrer"
+                >Inrikes</a
+              >
+            </li>
+            <li>
+              <a href="/utrikes.html" target="_blank" rel="noopener noreferrer"
+                >Utrikes</a
+              >
+            </li>
+            <li>
+              <a href="/varlden.html" target="_blank" rel="noopener noreferrer"
+                >Världen</a
+              >
+            </li>
+            <li>
+              <a href="/politik.html" target="_blank" rel="noopener noreferrer"
+                >Politik</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -43,9 +70,11 @@
 
     <main>
       <section aria-label="Huvudartikel">
-        <!-- Byt artikeltiteln till h2 så att bara sidans namn är h1 -->
-        <h2>Krock på E4an</h2>
-        <p>Krock på E4an – båda vägar avstängda.</p>
+        <h2>Krock på E4: båda vägar avstängda</h2>
+        <p>
+          Räddningstjänst och polis är på plats efter en flerbilskollision på
+          E4. Trafiken leds om och köer har bildats.
+        </p>
       </section>
 
       <div>
@@ -54,35 +83,59 @@
             <header>
               <h2>Alexander Isak klar för Liverpool</h2>
               <p>
-                Stor chock för fotbollsvärlden! Alexander Isak klar för
-                Liverpool efter mycket om och men runt Newcastle.
+                Stor överraskning i Premier League – efter långdragna
+                förhandlingar är anfallsstjärnan klar för Liverpool.
               </p>
             </header>
             <figure>
               <img
                 src="https://via.placeholder.com/640x360"
-                alt="Platshållarbild på Alexander Isak"
+                width="640"
+                height="360"
+                loading="lazy"
+                alt="Alexander Isak poserar i en röd matchtröja på en fotbollsarena"
               />
+              <figcaption>Pressbild från klubbens presentation.</figcaption>
             </figure>
             <p>Här ser vi Alexander Isak med sin nya Liverpool-tröja.</p>
-            <p><a href="#">Läs mer</a></p>
+            <p>
+              <a
+                href="/sport/isak-liverpool.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Läs mer</a
+              >
+            </p>
           </article>
 
           <article>
             <header>
-              <h2>Trumps tariffer mot Kina</h2>
+              <h2>Trumps tariffer mot Kina höjs ytterligare</h2>
               <p>
-                Trump har ännu en gång höjt tarifferna mot Kina, nu mer än förr
-                till 200%.
+                USA meddelar en ny runda handelstullar – nivåerna höjs till 200
+                procent på utvalda varor.
               </p>
             </header>
             <figure>
               <img
                 src="https://via.placeholder.com/640x360"
-                alt="Platshållarbild"
+                width="640"
+                height="360"
+                loading="lazy"
+                alt="Lastcontainrar staplade i en hamn med kranar i bakgrunden"
               />
+              <figcaption>
+                Höjda tariffer påverkar globala leveranskedjor.
+              </figcaption>
             </figure>
-            <p><a href="#">Läs mer</a></p>
+            <p>
+              <a
+                href="/ekonomi/tullar-kina.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Läs mer</a
+              >
+            </p>
           </article>
         </section>
 
@@ -90,45 +143,54 @@
           <section>
             <h3>Tipsa redaktionen</h3>
             <form action="#" method="post">
-              <div>
-                <label>Ditt namn</label>
+              <label>
+                Ditt namn
                 <input name="namn" autocomplete="name" />
-              </div>
-              <div>
-                <label>Din telefon</label>
-                <input name="tel" type="tel" autocomplete="tel" />
-              </div>
-              <div>
-                <label>Din e-post</label>
+              </label>
+
+              <label>
+                Din e-post
                 <input name="mail" type="email" autocomplete="email" required />
-              </div>
-              <div>
-                <label>Välj ämne</label>
+              </label>
+
+              <label>
+                Din telefon
+                <input
+                  name="tel"
+                  type="tel"
+                  autocomplete="tel"
+                  placeholder="+46 70 123 45 67"
+                />
+              </label>
+
+              <label>
+                Välj ämne
                 <select name="amne">
                   <option>Nyhetstips</option>
                   <option>Rättelse</option>
                   <option>Debatt</option>
                   <option>Insändare</option>
                 </select>
-              </div>
-              <div>
-                <label>Meddelande</label>
+              </label>
+
+              <label>
+                Meddelande
                 <textarea
                   name="msg"
                   rows="6"
                   placeholder="Berätta vad som hänt…"
                 ></textarea>
-              </div>
-              <div>
-                <label>GDPR och villkor</label>
+              </label>
+
+              <label>
+                GDPR och villkor
                 <select name="gdpr">
                   <option selected>Välj ett alternativ</option>
                   <option>Jag godkänner villkoren</option>
                 </select>
-              </div>
-              <div>
-                <button type="submit">Skicka</button>
-              </div>
+              </label>
+
+              <button type="submit">Skicka</button>
             </form>
           </section>
 
@@ -136,8 +198,10 @@
             <h3>Nyhetsbrev</h3>
             <p>Få helgens viktigaste direkt i inkorgen.</p>
             <form action="#" method="post">
-              <label>E-post</label>
-              <input type="email" placeholder="din@mail.se" />
+              <label>
+                E-post
+                <input type="email" placeholder="din@mail.se" />
+              </label>
               <button type="submit">Prenumerera</button>
             </form>
           </section>
@@ -147,10 +211,25 @@
 
     <footer>
       <section>
-        <h4>Nyheter.nu</h4>
+        <h4>Nyheter.NU</h4>
         <p>Örebro</p>
-        <p>Telefon:</p>
-        <p>E-post:</p>
+        <p>Telefon: <a href="tel:+46701234567">070 123 45 67</a></p>
+        <p>E-post: <a href="mailto:info@nyheter.nu">info@nyheter.nu</a></p>
+        <p>
+          Följ oss:
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >,
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </p>
       </section>
     </footer>
   </body>
