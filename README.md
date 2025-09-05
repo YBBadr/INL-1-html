@@ -17,3 +17,5 @@ Todo-List
 - [ ] Tillgänglighetsgranska koden (labels, alt-texter, rubriknivåer) – 1 SP
 
 Sammanfattning: Detta är första gången jag kodat html och tyckte att det var rätt svårt men efter ett litet tag så "börja" man fatta mer och mer. Känner 100% att jag behöver lägga mer tid på att förstå programmeringsspråken och vad olika taggar gör! Hade uppskattats om du Jenni hade kunnat dela med dig om vart man kan lära sig grunderna av kodning, tex någon speciel sida, Youtuber och så vidare. Har också lärt mig att ai hittar små små misstag som man själv aldrig kanske skulle hitta.
+
+![Validator-resultat](bilder/validator.png)
