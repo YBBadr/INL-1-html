@@ -1,7 +1,11 @@
 # INL 1 html
 
 Inlämningsuppgift 1 html
+Estimerad tid = 6 timmar
+Verklig tid = 11 timmar ~
 Start 09-04-25 kl 12.30 till 09-04-25 23.40~
+Rast mellan 15.00-16.00
+
 Todo-List
 
 - [ ] Sätta upp grundstrukturen för sidan (doctype, html, head, body) – 1,5 SP
